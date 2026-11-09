@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d16">
+  <meta name="description" content="Abhay Tiwari — Electronics Systems student at IIT Madras, building embedded systems, digital logic and hardware projects.">
+  <title>Abhay Tiwari | Electronics Systems</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Abhay Tiwari home"><span class="brand-mark">AT</span><span>ABHAY TIWARI<span class="brand-sub">ENGINEERING PORTFOLIO</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav id="mainNav">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#certificates">Certificates</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact" class="nav-contact">Let's connect <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> ELECTRONICS SYSTEMS · IIT MADRAS</div>
+        <h1>Electronics<br><span class="gradient-text">Systems</span><br>Student.</h1>
+        <p class="hero-lede">I'm Abhay Tiwari — an Electronics Systems student interested in embedded systems, digital design and turning circuit-level ideas into working prototypes.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button button-ghost" href="mailto:25f2100364@es.study.iitm.ac.in">Get in touch <span>↗</span></a>
+        </div>
+        <div class="hero-meta"><span><i>01</i> Embedded systems</span><span><i>02</i> Digital design</span><span><i>03</i> Hardware prototyping</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative circuit-inspired graphic">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="core"><span class="core-symbol">∿</span><span class="core-label">SIGNAL / SYSTEM</span></div>
+        <span class="node node-a"></span><span class="node node-b"></span><span class="node node-c"></span>
+        <span class="visual-tag tag-top">INPUT → PROCESS → OUTPUT</span><span class="visual-tag tag-bottom">DESIGN / BUILD / TEST</span>
+        <div class="coordinate">25°N<br>80°E</div>
+      </div>
+      <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="intro-strip">
+      <div class="section-wrap strip-inner"><span>FOCUS AREAS</span><p>Embedded C <b>✳</b> Arduino <b>✳</b> Verilog <b>✳</b> Sensors <b>✳</b> Circuit Design <b>✳</b> Linux</p></div>
+    </section>
+
+    <section class="section-wrap section-block" id="about">
+      <div class="section-heading"><div><span class="section-index">01 / PROFILE</span><h2>A little about <span class="muted">me.</span></h2></div><p class="section-note">Curiosity first. Build, measure, debug, repeat.</p></div>
+      <div class="about-grid">
+        <div class="about-main"><p class="about-big">I enjoy understanding how systems work — from the logic inside a digital circuit to the software that makes hardware respond to the world.</p><p>My learning combines electronics fundamentals with practical experimentation. I've worked with Arduino-based sensor projects, digital logic ICs, introductory Verilog and circuit analysis. I like documenting what I build and improving my designs through testing.</p></div>
+        <div class="about-facts">
+          <div class="fact"><span class="fact-label">CURRENTLY</span><strong>BS in Electronic Systems</strong><small>IIT Madras</small></div>
+          <div class="fact"><span class="fact-label">INTERESTED IN</span><strong>Embedded & sensing systems</strong><small>Hardware + software</small></div>
+          <div class="fact"><span class="fact-label">APPROACH</span><strong>Hands-on learning</strong><small>Prototype · Debug · Iterate</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="projects">
+      <div class="section-heading"><div><span class="section-index">02 / SELECTED WORK</span><h2>Projects & <span class="muted">experiments.</span></h2></div><p class="section-note">A selection of builds, lab work and code exercises.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-media"><img src="assets/radar-poster.jpg" alt="Arduino ultrasonic radar visualization on a laptop"><span class="media-label">01 — EMBEDDED SYSTEMS</span><span class="media-corner">LIVE SCAN ↗</span></div>
+          <div class="project-content"><div class="project-topline"><span>ARDUINO · HC-SR04 · SERVO</span><span>2026</span></div><h3>Radar-Based Obstacle Detection</h3><p>Built a scanning distance-detection prototype using an ultrasonic sensor mounted on a servo. The Arduino sweeps through angles, measures echo time, and sends angle–distance readings over serial for a radar-style visualization.</p><ul class="project-points"><li>Servo sweep from 0° to 180° in 5° steps</li><li>HC-SR04 echo timing converted to distance</li><li>9600-baud serial output for visualization</li></ul>
+            <div class="tags"><span>Arduino</span><span>Ultrasonic sensing</span><span>Servo control</span><span>Serial communication</span></div>
+            <div class="project-links"><a href="assets/radar_based_system.ino" download>Arduino code ↓</a><a href="https://github.com/abhaytiwari727534-svg" target="_blank" rel="noreferrer">GitHub profile ↗</a></div>
+          </div>
+          <div class="video-row"><div><span class="mini-label">PROJECT DEMO</span><video controls preload="metadata" poster="assets/radar-poster.jpg"><source src="assets/radar-demo.mp4" type="video/mp4">Your browser does not support video.</video></div><div><span class="mini-label">HARDWARE SETUP</span><img class="setup-image" src="assets/radar-setup.jpg" alt="Arduino, ultrasonic sensor and servo hardware setup"></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media"><img src="assets/led-poster.jpg" alt="LEDs connected on a breadboard in a lighting sequence"><span class="media-label">02 — MICROCONTROLLER</span></div>
+          <div class="project-content"><div class="project-topline"><span>ARDUINO · DIGITAL OUTPUTS</span><span>2026</span></div><h3>Multi-Pattern LED Sequencer</h3><p>Programmed nine LEDs connected to digital pins 5–13 to create repeated lighting patterns, including all-on/all-off flashes, travelling sequences and expanding groups.</p><div class="tags"><span>Arduino</span><span>GPIO</span><span>Loops</span><span>Timing</span></div><div class="project-links"><a href="assets/blinking-led-patterns.ino" download>Arduino code ↓</a></div>
+            <div class="video-inline"><span class="mini-label">BUILD VIDEO</span><video controls preload="metadata" poster="assets/led-poster.jpg"><source src="assets/blinking-led-demo.mp4" type="video/mp4">Your browser does not support video.</video></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual-placeholder"><span class="chip-art">74LS163</span><span class="placeholder-caption">DIGITAL LOGIC / FSM</span></div>
+          <div class="project-content"><div class="project-topline"><span>COUNTER IC · 7-SEGMENT DISPLAY</span><span>LAB WORK</span></div><h3>Digital Counter (0–16)</h3><p>Designed a digital counting circuit using a 74LS163 counter and a 7-segment display with a driver IC. The implementation also explored clock generation and transistor switching.</p><div class="tags"><span>Digital electronics</span><span>74LS163</span><span>7-segment display</span><span>BJT</span></div><p class="evidence-note">Description based on the project details in my resume. Circuit photographs and schematics can be added when available.</p></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual-placeholder bridge-art"><span class="bridge-symbol">◇</span><span class="placeholder-caption">MEASUREMENT / CIRCUITS</span></div>
+          <div class="project-content"><div class="project-topline"><span>RESISTIVE BRIDGE</span><span>LAB WORK</span></div><h3>Wheatstone Bridge Experiment</h3><p>Built and analysed a bridge circuit to determine an unknown resistance, verify the balance condition and study sensitivity and practical measurement errors.</p><div class="tags"><span>Circuit analysis</span><span>KCL</span><span>Resistance measurement</span></div><p class="evidence-note">Description based on the project details in my resume. Detailed readings and circuit images can be added later.</p></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual-placeholder code-art"><span class="code-mark">{"{ }"}</span><span class="placeholder-caption">SYSTEMVERILOG</span></div>
+          <div class="project-content"><div class="project-topline"><span>HDL-BITS PRACTICE</span><span>ONGOING</span></div><h3>Verilog / SystemVerilog Exercises</h3><p>A growing collection of HDL practice covering basic assignments, vector slicing, bitwise and logical operations, concatenation, replication and procedural blocks.</p><div class="tags"><span>Verilog</span><span>SystemVerilog</span><span>Combinational logic</span></div><div class="project-links"><a href="https://github.com/abhaytiwari727534-svg/HDL-Bits-Solutions" target="_blank" rel="noreferrer">View repository ↗</a></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual-placeholder python-art"><span class="python-mark">Py</span><span class="placeholder-caption">PYTHON / LOGIC</span></div>
+          <div class="project-content"><div class="project-topline"><span>PYTHON</span><span>BEGINNER PROJECT</span></div><h3>Stone–Paper–Scissors</h3><p>A command-line game in Python using random computer selection, input validation and conditional logic to determine the round outcome.</p><div class="tags"><span>Python</span><span>Random module</span><span>Conditionals</span></div><div class="project-links"><a href="https://github.com/abhaytiwari727534-svg/stone-paper-scissors-" target="_blank" rel="noreferrer">View repository ↗</a></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="experience">
+      <div class="section-heading"><div><span class="section-index">03 / EXPERIENCE</span><h2>Learning by <span class="muted">doing.</span></h2></div></div>
+      <div class="timeline">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content"><div class="project-topline"><span>TEACHING ASSISTANT</span><span>IIT MADRAS</span></div><h3>Electronics Systems Thinking — Circuit Lab</h3><p>Supported students during circuit-lab sessions by helping debug circuits and troubleshoot lab setups. Also graded lab reports and assignments and provided feedback on circuit design and analysis.</p><div class="tags"><span>Circuit debugging</span><span>Lab support</span><span>Technical feedback</span></div></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="certificates">
+      <div class="section-heading"><div><span class="section-index">04 / RECOGNITION</span><h2>Certificates & <span class="muted">recognition.</span></h2></div><p class="section-note">Official recognition of my teaching-assistant contributions at IIT Madras.</p></div>
+      <div class="certificate-grid">
+        <article class="certificate-card">
+          <div class="certificate-icon">01</div>
+          <div class="certificate-copy">
+            <span class="mini-label">IIT MADRAS · BS IN ELECTRONIC SYSTEMS</span>
+            <h3>Teaching Assistant — Electronic Systems Thinking and Circuits Lab</h3>
+            <p>Recognised for serving as a Teaching Assistant for the in-person laboratory component and completing the assigned activity.</p>
+            <div class="project-topline"><span>JANUARY – APRIL 2026</span><span>TA CERTIFICATE</span></div>
+            <a class="certificate-link" href="assets/ta-certificate-jan-apr-2026.pdf" target="_blank" rel="noreferrer">View certificate (PDF) ↗</a>
+          </div>
+        </article>
+        <article class="certificate-card">
+          <div class="certificate-icon">02</div>
+          <div class="certificate-copy">
+            <span class="mini-label">IIT MADRAS · BS IN ELECTRONIC SYSTEMS</span>
+            <h3>Teaching Assistant — Electronic Systems Thinking and Circuits Lab</h3>
+            <p>Recognised for serving as a Teaching Assistant for the in-person laboratory component and completing the assigned activity.</p>
+            <div class="project-topline"><span>MAY – AUGUST 2026</span><span>TA CERTIFICATE</span></div>
+            <a class="certificate-link" href="assets/ta-certificate-may-aug-2026.pdf" target="_blank" rel="noreferrer">View certificate (PDF) ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="skills">
+      <div class="section-heading"><div><span class="section-index">04 / TOOLKIT</span><h2>Skills & <span class="muted">technologies.</span></h2></div><p class="section-note">Tools and topics I've worked with or studied.</p></div>
+      <div class="skills-grid">
+        <div class="skill-panel"><span class="skill-number">01</span><h3>Programming</h3><div class="skill-list"><span>C</span><span>Embedded C</span><span>Python</span><span>Verilog</span><span>Arduino</span><span>Linux</span></div></div>
+        <div class="skill-panel"><span class="skill-number">02</span><h3>Electronics</h3><div class="skill-list"><span>Digital logic</span><span>Microcontrollers</span><span>Sensors</span><span>UART</span><span>I²C</span><span>SPI</span><span>Logic ICs</span><span>7-segment displays</span></div></div>
+        <div class="skill-panel"><span class="skill-number">03</span><h3>Platforms & tools</h3><div class="skill-list"><span>Arduino</span><span>ESP32</span><span>LTspice</span><span>VS Code</span><span>PixelPulse</span><span>Scope-X</span></div></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block education-block" id="education">
+      <div class="section-heading"><div><span class="section-index">06 / EDUCATION</span><h2>Academic <span class="muted">background.</span></h2></div></div>
+      <div class="education-row"><div class="edu-year">2025 — PRESENT</div><div><h3>BS in Electronic Systems</h3><p>Indian Institute of Technology Madras</p><span class="edu-detail">Coursework: Electronic and Electrical Circuits · Fundamentals of Digital Systems · Digital System Design · Python Programming · Signals and Systems</span></div></div>
+      <div class="education-row"><div class="edu-year">CLASS XII</div><div><h3>Ben Hur Inter College</h3><p>Unnao, Uttar Pradesh</p></div></div>
+      <div class="education-row"><div class="edu-year">PARTICIPATION</div><div><h3>IEEE Symposium — IIT Kanpur</h3><p>Attended sessions and workshops covering presentation design, debugging and embedded-systems fundamentals.</p></div></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-wrap contact-inner"><div><span class="section-index">07 / CONTACT</span><h2>Have a project<br>in <span class="gradient-text">mind?</span></h2><p>I'm open to learning opportunities, project collaborations and conversations around electronics and embedded systems.</p></div>
+        <div class="contact-links"><a href="mailto:25f2100364@es.study.iitm.ac.in"><span>EMAIL</span><strong>25f2100364@es.study.iitm.ac.in</strong><b>↗</b></a><a href="tel:+918707732951"><span>PHONE</span><strong>+91 87077 32951</strong><b>↗</b></a><a href="https://github.com/abhaytiwari727534-svg" target="_blank" rel="noreferrer"><span>GITHUB</span><strong>abhaytiwari727534-svg</strong><b>↗</b></a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="section-wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">AT</span><span>ABHAY TIWARI<span class="brand-sub">ENGINEERING PORTFOLIO</span></span></a><span>Designed & built with curiosity.</span><a href="#home">BACK TO TOP ↑</a><small>© <span id="year"></span> Abhay Tiwari</small></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
