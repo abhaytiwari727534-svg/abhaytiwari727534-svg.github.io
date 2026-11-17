@@ -67,6 +67,24 @@
   }
 }
 
+.video-row-single {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) !important;
+  width: 100%;
+}
+
+.video-row-single > div {
+  width: 100%;
+  min-width: 0;
+}
+
+.video-row-single video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 #resume {
   margin-bottom: 180px;
 }
